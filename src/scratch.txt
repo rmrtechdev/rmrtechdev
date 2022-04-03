@@ -1,0 +1,88 @@
+<ParallaxWrapper parallaxScale={0.23}>
+- About
+
+            <ParallaxWrapper parallaxScale={1}>
+- Headshot
+
+<ParallaxWrapper parallaxScale={1}>
+-- Projects
+&&import { Parallax } from "react-scroll-parallax";
+<Parallax>
+
+ <ParallaxWrapper parallaxScale={1}>
+ -- Skills**
+ &&
+import { Parallax } from "react-scroll-parallax";
+<Parallax>
+
+  <ParallaxProvider>
+  -index
+
+  <ParallaxBanner
+        className="text-gray-400 body-font full-height"
+        layers={[
+          {
+            image: bggrid,
+            amount: 0,
+            slowerScrollRate: false
+          }]
+        }
+        style={{
+          height: ''
+        }}>
+--APP
+
+import { Parallax } from "react-scroll-parallax";
+<Parallax>
+--Navbar  
+
+***
+
+<section className="VFXSpanExample">
+
+
+
+                <VFX.VFXSpan shader="sinewave" overflow>
+                    You can also add effects to <br />
+                    plain text!!!!!
+                </VFX.VFXSpan>
+            </section>
+
+
+export default function App() {
+  const [items, setItems] = useState(false);
+  const transition = useTransition(items, {
+    from: { x: -100, y: 800, opacity: 0 },
+    enter: item => async (next) => {
+      await next({ y: item.y, opacity: 1, delay: item.delay });
+      await next({ x: 0 });
+  },
+    leave: { x: 100, y: 800, opacity: 0 },
+  });
+
+
+***
+
+
+
+ import { VFXProvider, VFXSpan } from 'react-vfx';
+   <VFXProvider>  <VFXProvider>
+ <VFXSpan shader="glitch">
+                                Hello, Friend. </VFXSpan>
+
+
+                                <br></br>
+
+
+
+ <div className="inline-flex items-center mx-auto px-10 py-10 title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
+
+                            
+
+<p className="mb-8 italic leading-relaxed">
+                               
+                            </p>
+                            </div>
+
+
+                             
