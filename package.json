@@ -1,7 +1,6 @@
 {
-  "name": "my-portfolio",
+  "name": "rmrtech-portfolio",
   "version": "0.1.0",
-  "homepage": "https://rmrtechdev.github.io/",
   "private": true,
   "dependencies": {
     "@craco/craco": "^5.9.0",
@@ -15,6 +14,7 @@
     "axios": "^0.24.0",
     "emailjs-com": "^3.2.0",
     "matrix-card": "^0.2.8",
+    "prop-types": "^15.8.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
@@ -24,11 +24,12 @@
     "react-rotating-text": "^1.4.1",
     "react-router-dom": "^6.0.2",
     "react-scripts": "^4.0.3",
+    "react-scroll-motion": "^0.2.6",
     "react-scroll-parallax": "^2.4.0",
     "react-spark-scroll": "^4.0.0",
     "react-spring": "^9.4.4",
     "react-vfx": "^0.5.0",
-    "scrollmagic": "^2.0.8"
+    "react-visibility-sensor": "^5.1.1"
   },
   "engines": {
     "node": "16.11.0"
