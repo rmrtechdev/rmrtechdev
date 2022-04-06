@@ -36,6 +36,8 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <!-- AOS ANIMATION STYLES-->
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>RMR Portfolio</title>
   </head>
   <body>
@@ -44,8 +46,14 @@
 
 
 
-
+  <!--- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    AOS.refresh();
+  </script>
   </body>
+ 
   <script
     type="text/javascript"
     src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"

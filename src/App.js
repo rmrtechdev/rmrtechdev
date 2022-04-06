@@ -1,34 +1,59 @@
-import './App.css'
-import { useState } from 'react';
-import { useTransition, animated } from 'react-spring';
+// src/App.js
+
+import React from "react";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Navbar from "./components/Navbar";
+import Projects from "./components/Projects";
+import Skills from "./components/OldSkills";
+import { ParallaxBanner } from 'react-scroll-parallax';
+import bggrid from './bggrid.jpg'
+import Headshot from "./components/Headshot";
 
 
 
-const App = () => {
-  const [items, setItems] = useState([]);
-  const transition = useTransition(items, {
-    from: { x: -100, y: 800, opacity: 0, width: 11, height: 11 },
-    //enter now accepts argument/attribute as a callback! not an object...
-    enter: item => async (next) => {
-      await next({ y: item.y, opacity: 1, delay: item.delay });
-      await next({ x: 0, width: 100, height: 100  });
-    }
-  });
+export default function App() {
+
   return (
-    <div className="app">
-      <button onClick={() => {
-        setItems(v => v.length ? [] : [
-          // below are the "callback" values for ^next 'enter' positioning
-          { y: -100, delay: 336 },
-          { y: 0, delay: 666 },
-          { y: 100, delay: 1100}]);
-      }}>{items.length ? 'un-mount' : 'mount'}</button>
-      <div className='container'>
-        {transition((style, item) =>
-          item ? <animated.div style={style} className="item" /> : ''
-        )}
-      </div>
-    </div>
-  );  
+
+   
+      <ParallaxBanner
+        className="text-gray-400 body-font full-height"
+        layers={[
+
+          {
+            image: bggrid,
+            amount: 0,
+            slowerScrollRate: false
+          }]
+        }
+        style={{
+          height: '100',
+          width: '100'
+        }}>
+
+        <Navbar />
+
+        <div className="container">
+
+          <div className="container flex px-10 py-20 md:flex-row flex-col items-center">
+
+            <About />
+
+            <Headshot className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6" />
+          </div>
+          <Projects />
+          <Skills />
+          <Contact />
+        </div>
+      </ParallaxBanner>
+
+
+  )
 }
-export default App; 
+
+
+
+
+
+

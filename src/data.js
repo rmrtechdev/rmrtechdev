@@ -3,10 +3,10 @@ export const projects = [
     title: "Frontend Demo: Three.JS UX Fan Site",
     subtitle: "Three.Javascript",
     description:
-      "As a Javascript library for 3-D web interactivity, Three.js illustrates the interactivite modern internet users have grown accustomed to. Websites are no longer static pages of shared information but rather immersive experiences users will enjoy & remember. To produce 3-d effects, Three.js provides functionality including: camera panning, object-orientation vectors, custom lighting sources, & virtual materials design by way of texturing.",
+      "As a Javascript library for 3-D web interactivity, Three.js illustrates the computing modern internet users have grown accustomed to. Websites are no longer static pages of shared information but rather immersive experiences users will enjoy & remember. To produce 3-D effects, Three.js provides functionality including: camera panning, object-orientation vectors, custom lighting sources, & virtual materials design by way of texturing.",
     video: "./3jsx3.mp4",
     link: "https://threejs.org",
-  }, 
+  },
   {
     title: "Backend Demo: e-Commerce Store",
     subtitle: "Python | Django | Javascript",
@@ -46,7 +46,7 @@ export const projects = [
       "Plotly's open-source, publication-quality graphing library provides Python programmers with the tools to make big data make sense. Data Analysts with Plotly Python can share the story of financial industry and scientific researc2h just as easy as showing direction via map charts or an A.I. Machine-Learning. Data can even be made interactive via both default and user-controlled animations.",
     video: "./globalEQinter.mp4",
     link: "https://www.django-rest-framework.org",
-  }  
+  }
 ];
 
 
@@ -55,13 +55,17 @@ export const skills = [
   "Django",
   "React JS",
   "Three JS",
+  "Next JS",
   "REST API's",
-  "Database Mgmt: PostgreSQL",
+  "GraphQL",
+  "Relational Database MGMT | ORM's",
   "Web Scraping",
+  "Data Mining",
   "Data Visualization",
   "Docker",
   "Git ~ GitHub",
-  "Linux ~ LAMP Stack",
+  "Linux ~ LAMP-Stack Architecture",
+  "MACH-Stack Architecture",
   "Browser 'Bot' Automation"
-  
+
 ];
